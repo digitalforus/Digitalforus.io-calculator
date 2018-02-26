@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS Scientific Calculator</title>
+    <!-- custom-theme -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/jpg" sizes="16x16" href="images/logo.jpg">
+</head>
+
+<body>
+    <div class="calc-main">
+        <div class="calc-display">
+            <input type="text" id="inp" placeholder="0">
+        </div>
+        <div class="calc-left">
+            <div>
+                <div>(</div>
+            </div>
+            <div>
+                <div>)</div>
+            </div>
+            <div>
+                <div>%</div>
+            </div>
+            <div>
+                <div>1/x</div>
+            </div>
+            <div>
+                <div>x
+                    <sup>2</sup>
+                </div>
+            </div>
+            <div>
+                <div>x
+                    <sup>3</sup>
+                </div>
+            </div>
+            <div>
+                <div>y
+                    <sup>x</sup>
+                </div>
+            </div>
+            <div>
+                <div>x!</div>
+            </div>
+            <div>
+                <div>&radic;</div>
+            </div>
+            <div>
+                <div class="calc-radxy">
+                    <sup>x</sup>
+                    <em>&radic;</em>
+                    <span>y</span>
+                </div>
+            </div>
+            <div>
+                <div>log</div>
+            </div>
+            <div>
+                <div>sin</div>
+            </div>
+            <div>
+                <div>cos</div>
+            </div>
+            <div>
+                <div>tan</div>
+            </div>
+            <div>
+                <div>ln</div>
+            </div>
+            <div>
+                <div>sinh</div>
+            </div>
+            <div>
+                <div>cosh</div>
+            </div>
+            <div>
+                <div>tanh</div>
+            </div>
+            <div>
+                <div>e
+                    <sup>x</sup>
+                </div>
+            </div>
+            <div>
+                <div>&pi;</div>
+            </div>
+        </div>
+        <div class="calc-right">
+            <div class="calc-brown">
+                <div>AC</div>
+            </div>
+            <div class="calc-brown">
+                <div>+/&#8211;</div>
+            </div>
+            <div class="calc-brown calc-f19">
+                <div>&divide;</div>
+            </div>
+            <div class="calc-brown calc-f21">
+                <div>&times;</div>
+            </div>
+            <div class="calc-black">
+                <div onclick="output(7)">7</div>
+            </div>
+            <div class="calc-black">
+                <div onclick="output(8)">8</div>
+            </div>
+            <div class="calc-black">
+                <div onclick="output(9)">9</div>
+            </div>
+            <div class="calc-brown calc-f18">
+                <div>&#8211;</div>
+            </div>
+            <div class="calc-black">
+                <div onclick="output(4)">4</div>
+            </div>
+            <div class="calc-black">
+                <div onclick="output(5)">5</div>
+            </div>
+            <div class="calc-black">
+                <div onclick="output(6)">6</div>
+            </div>
+            <div class="calc-brown calc-f18">
+                <div>+</div>
+            </div>
+            <div class="calc-black">
+                <div onclick="output(0)">0</div>
+            </div>
+            <div class="calc-black">
+                <div onclick="output(1)">1</div>
+            </div>
+            <div class="calc-black">
+                <div onclick="output(2)">2</div>
+            </div>
+            <div class="calc-black">
+                <div onclick="output(3)">3</div>
+            </div>
+            <div class="calc-black">
+                <div>Ans</div>
+            </div>
+            <div class="calc-black calc-f21">
+                <div onclick="">.</div>
+            </div>
+            <div class="calc-black calc-zero">
+                <div>
+                    <span>=</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/calc.js"></script>
+</body>
+
+</html>
