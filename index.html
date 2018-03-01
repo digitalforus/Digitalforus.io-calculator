@@ -18,10 +18,10 @@
         </div>
         <div class="calc-left">
             <div>
-                <div>(</div>
+                <div onclick="output('(')">(</div>
             </div>
             <div>
-                <div>)</div>
+                <div onclick="output(')')">)</div>
             </div>
             <div>
                 <div>%</div>
@@ -40,9 +40,7 @@
                 </div>
             </div>
             <div>
-                <div>y
-                    <sup>x</sup>
-                </div>
+                <div>^</div>
             </div>
             <div>
                 <div>x!</div>
@@ -52,9 +50,9 @@
             </div>
             <div>
                 <div class="calc-radxy">
-                    <sup>x</sup>
+                    <sup>3</sup>
                     <em>&radic;</em>
-                    <span>y</span>
+                    <span>x</span>
                 </div>
             </div>
             <div>
@@ -92,16 +90,16 @@
         </div>
         <div class="calc-right">
             <div class="calc-brown">
-                <div>AC</div>
+                <div onclick="reset()">AC</div>
             </div>
             <div class="calc-brown">
-                <div>+/&#8211;</div>
+                <div onclick="backSpace()">Back</div>
             </div>
             <div class="calc-brown calc-f19">
-                <div>&divide;</div>
+                <div onclick="output('/')">&divide;</div>
             </div>
             <div class="calc-brown calc-f21">
-                <div>&times;</div>
+                <div onclick="output('*')">&times;</div>
             </div>
             <div class="calc-black">
                 <div onclick="output(7)">7</div>
@@ -113,7 +111,7 @@
                 <div onclick="output(9)">9</div>
             </div>
             <div class="calc-brown calc-f18">
-                <div>&#8211;</div>
+                <div onclick="output('-')">&#8211;</div>
             </div>
             <div class="calc-black">
                 <div onclick="output(4)">4</div>
@@ -125,7 +123,7 @@
                 <div onclick="output(6)">6</div>
             </div>
             <div class="calc-brown calc-f18">
-                <div>+</div>
+                <div onclick="output('+')">+</div>
             </div>
             <div class="calc-black">
                 <div onclick="output(0)">0</div>
@@ -143,10 +141,10 @@
                 <div>Ans</div>
             </div>
             <div class="calc-black calc-f21">
-                <div onclick="">.</div>
+                <div onclick="output('.')">.</div>
             </div>
             <div class="calc-black calc-zero">
-                <div>
+                <div onclick="calc()">
                     <span>=</span>
                 </div>
             </div>
