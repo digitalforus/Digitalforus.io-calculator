@@ -35,6 +35,7 @@ var Stack = {
 
 //input box that displays the ouptut to the user
 var answer = "";
+var ansgotten = true;
 var displayBox = document.getElementById("inp");
 var buff = "";
 var input = [];
@@ -75,6 +76,11 @@ else
 */
 function output(chr) {
     //if chr is a number
+    if(ansgotten == true){
+        displayBox.value = "";
+        ansgotten = false;
+    }
+
     if(!isNaN(chr)){
         displayBox.value += chr;
         buff += chr;
@@ -121,10 +127,12 @@ function calc() {
         input.push(buff);
         buff = "";
         let x = infixToPostfix();
-        displayBox.value = evaluatePostfix(x);
+        //displayBox.value = evaluatePostfix(x);
         input = [];
-        input.push(evaluatePostfix(x));
+        //input.push(evaluatePostfix(x));
         answer = evaluatePostfix(x);
+        displayBox.value = answer;
+        ansgotten = true;
     }
 }
 
